@@ -1,0 +1,114 @@
+:root{
+    --navbar__link__hover: red;
+
+    --home__span: red;
+
+    --btn: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+h6{
+    color: #D8D8D8;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: var(--btn);
+}
+
+.navbar{
+    font-size: 16px;
+    color: black;
+}
+
+.navStyle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.navUser{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active{
+    color: var(--navbar__link__hover);
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#home{
+    border: 1px solid red;
+    background-image: url(Imagens/pexels-jae-park-3770875.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span{
+    color: var(--home__span);
+}
