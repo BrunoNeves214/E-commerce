@@ -1,9 +1,10 @@
 :root{
-    --navbar__link__hover: red;
-
-    --home__span: red;
-
-    --btn: red;
+    --60: white;
+    --60_5: rgba(255, 255, 255, 0.5);
+    --30: #1d1d1d;
+    --30_5: rgba(29, 29, 29, 0.5);
+    --10: red;
+    --10_5: rgba(255, 0, 0, 0.5);
 }
 
 *{
@@ -13,7 +14,8 @@
 }
 
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;;
+    color: var(--30);
 }
 
 h1{
@@ -39,11 +41,10 @@ h4{
 h5{
     font-size: 1rem;
     font-weight: 400;
-    color: #1d1d1d;
 }
 
 h6{
-    color: #D8D8D8;
+    color: var(--60);
 }
 
 button{
@@ -51,19 +52,20 @@ button{
     font-weight: 700;
     outline: none;
     border: none;
-    background-color: black;
-    color: white;
+    background-color: var(--30);
+    color: var(--60);
     padding: 15px 30px;
     cursor: pointer;
     text-transform: uppercase;
-    border-radius: 50px;
+    border-radius: 20px;
     transition: 0.3s ease;
 }
 
 button:hover{
-    background-color: var(--btn);
+    background-color: var(--10);
 }
 
+/*NAVIGATION*/
 .navbar{
     font-size: 16px;
     color: black;
@@ -86,7 +88,7 @@ button:hover{
 .navbar i:hover,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar i.active{
-    color: var(--navbar__link__hover);
+    color: var(--10);
 }
 
 .navbar i{
@@ -95,8 +97,8 @@ button:hover{
     transition: 0.3s ease;
 }
 
+/*HOME*/
 #home{
-    border: 1px solid red;
     background-image: url(Imagens/pexels-jae-park-3770875.jpg);
     width: 100%;
     height: 100vh;
@@ -110,5 +112,65 @@ button:hover{
 }
 
 #home span{
-    color: var(--home__span);
+    color: var(--10);
+}
+
+/*BRAND*/
+#brand img{
+    width: 200px;
+    height: 150px;
+}
+
+/*NEWCAR*/
+#newCar .one img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#newCar .one .details{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: ease 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+
+#newCar .one .details h2{
+    color: var(--60);
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+#newCar .one .details button{
+    font-size: 14px;
+    font-weight: 500;
+    background: none;
+    border-bottom: 2px solid var(--60_5);
+    border-radius: 0px;
+    padding: 0px 5px;
+}
+
+#newCar .one .details:hover button{
+    padding: 0px 20px;
+}
+
+#newCar .one:hover .details{
+    cursor: pointer;
+    background-color: var(--30_5);
+}
+
+/*FEATURED*/
+#featured .product{
+    text-align: center;
+}
+
+#featured .product img{
+    border-radius: 20px;
 }
