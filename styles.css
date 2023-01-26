@@ -47,6 +47,12 @@ h6{
     color: var(--60);
 }
 
+hr{
+    background-color: var(--10_5);
+    width: 30%;
+    height: 0.2rem;
+}
+
 button{
     font-size: 0.8rem;
     font-weight: 700;
@@ -62,13 +68,14 @@ button{
 }
 
 button:hover{
-    background-color: var(--10);
+    background-color: var(--10_5);
 }
 
 /*NAVIGATION*/
 .navbar{
     font-size: 16px;
     color: black;
+    box-shadow: 0px 10px 15px var(--30_5);
 }
 
 .navStyle{
@@ -88,7 +95,12 @@ button:hover{
 .navbar i:hover,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar i.active{
-    color: var(--10);
+    color: var(--10_5);
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .navbar i{
@@ -112,7 +124,7 @@ button:hover{
 }
 
 #home span{
-    color: var(--10);
+    color: var(--10_5);
 }
 
 /*BRAND*/
@@ -173,4 +185,96 @@ button:hover{
 
 #featured .product img{
     border-radius: 20px;
+}
+
+#featured .product h5{
+    padding-top: 15px;
+    font-size:1.5rem;
+    font-weight: bold;
+    color: var(--30_5);
+}
+
+#featured .product h4{
+    font-size:1.4rem;
+    font-weight: bold;
+    color: var(--30);
+}
+
+#featured .product .btn-buy{
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+#featured .product:hover .btn-buy{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/*FOOTER*/
+footer{
+    padding-bottom: 20px;
+    background-color: var(--30);
+}
+
+.footer-col{
+    margin-top: 30px;
+    width: 25%;
+    padding: 0 50px; 
+}
+.footer-col h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin:20px 0;
+    font-weight: 700;
+    position: relative;
+    color: var(--60);
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--60);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li a {
+    margin: 10px 0;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--30);
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    transition: all 0.3s ease;
+    color: var(--60_5);
+} 
+.footer-col ul li a:hover{
+color: var(--10_5);
+padding-left: 5px ;
+}
+
+.footer-col .social-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-col .social-links a {
+    height: 40px;
+    width: 40px;
+    background-color: var(--60_5);
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    color: var(--30);
+    transition: all 0.3s ease;
+
+}
+.footer-col .social-links a:hover{
+ background-color: var(--10_5);   
 }
